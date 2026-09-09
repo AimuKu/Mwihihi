@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Babyy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:#38281f;background:#6b4c34 url("assets/wood.jpg") center/cover fixed;font-family:"Cormorant Garamond",serif}.light{position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 15%,rgba(255,240,205,.22),transparent 45%);z-index:0}.dust{position:fixed;inset:0;pointer-events:none;opacity:.2;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:37px 37px;z-index:1}.music-player{position:fixed;top:22px;right:22px;z-index:10;display:flex;align-items:center;gap:12px;padding:10px 13px;background:rgba(48,32,23,.82);border:1px solid rgba(255,225,180,.3);box-shadow:0 8px 25px #0005;color:#f7ead2;border-radius:4px}.album{width:46px;height:46px;display:grid;place-items:center;background:linear-gradient(135deg,#d5ad73,#735238);font-size:25px}.song-title{font-size:18px}.song-artist{font-size:12px;opacity:.65;letter-spacing:1px}.music-player button{margin-top:4px;border:0;background:none;color:#f5dfbd;padding:0;font-family:inherit;cursor:pointer}.intro{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:100px 20px 50px;color:#f5e8cf}.tiny{font-size:18px;opacity:.8}.intro h1{font-family:"Great Vibes",cursive;font-size:clamp(55px,12vw,105px);font-weight:400;margin:8px 0 0;text-shadow:0 4px 18px #0008}.intro p{font-size:21px;margin:0 0 28px}.letter-preview{cursor:pointer;transition:.5s transform}.letter-preview:hover{transform:translateY(-8px) rotate(1deg)}.preview-paper{width:min(300px,78vw);min-height:205px;padding:22px 25px;text-align:left;background:#ead5a5;box-shadow:0 15px 35px #0007;transform:rotate(-2deg);position:relative}.preview-paper:after{content:"";position:absolute;inset:9px;border:1px solid #8d6c4533}.preview-paper .date{font-size:13px;text-align:right}.preview-paper h2{font-family:"Caveat",cursive;font-size:31px;font-weight:500;margin:22px 0 8px}.lines i{display:block;width:85%;height:1px;background:#80624455;margin:10px 0}.signature{font-family:"Great Vibes",cursive;font-size:27px;text-align:right;margin-top:15px}.open-btn{margin-top:35px;padding:11px 24px;border:1px solid #c8a879;background:#ead5a533;color:#f7ead2;font-family:"Caveat",cursive;font-size:22px;cursor:pointer;border-radius:2px}.letter-section{position:relative;z-index:3;min-height:100vh;padding:70px 18px}.hidden{display:none}.back{position:fixed;top:22px;left:22px;z-index:10;border:0;background:#ead5a5dd;color:#4a3323;padding:9px 15px;font-family:"Caveat",cursive;font-size:19px;cursor:pointer;box-shadow:0 4px 15px #0004}.paper{position:relative;max-width:850px;margin:35px auto;padding:75px clamp(25px,7vw,80px);background:#ead5a5;background-image:radial-gradient(#76533112 1px,transparent 1px);background-size:29px 29px;box-shadow:0 18px 45px #0007;transform:rotate(.15deg)}.paper-top{position:absolute;left:0;right:0;top:0;height:17px;background:linear-gradient(90deg,transparent,#b9905c55,transparent);clip-path:polygon(0 0,4% 55%,8% 15%,13% 65%,19% 10%,26% 60%,33% 12%,40% 62%,48% 8%,56% 60%,64% 10%,72% 64%,80% 12%,88% 58%,95% 15%,100% 50%,100% 0)}.paper .date{font-size:15px;text-align:right;opacity:.7}.paper h1{font-family:"Great Vibes",cursive;font-size:55px;font-weight:400;margin:20px 0 35px}.letter-text p{font-size:19px;line-height:1.9;margin:0 0 23px}.promise{font-family:"Caveat",cursive;font-size:27px;line-height:1.5;margin:38px 0;padding:24px 28px;border-left:3px solid #765235;background:#f6e5bd99}.final{text-align:center;font-family:"Caveat",cursive;font-size:31px!important;margin-top:48px!important}.ps{text-align:center;font-family:"Caveat",cursive;font-size:23px!important}@media(max-width:650px){.music-player{top:10px;right:10px}.intro{padding-top:120px}.letter-section{padding:60px 10px}.paper{padding:55px 25px}.paper h1{font-size:43px}.letter-text p{font-size:17px;line-height:1.8}.promise{font-size:24px}.back{top:10px;left:10px}}
+</style>
+</head>
+<body>
+  <div class="light"></div>
+  <div class="dust"></div>
+
+  <div class="music-player">
+    <div class="album">♫</div>
+    <div class="song-info">
+      <div class="song-title">Panata</div>
+      <div class="song-artist">TOTHAPI</div>
+      <button id="playBtn">▶ Play</button>
+    </div>
+  </div>
+  <audio id="music" loop>
+    <source src="assets/panata.mp3" type="audio/mpeg">
+  </audio>
+
+  <section class="intro" id="intro">
+    <div class="tiny">a little something for you 😜</div>
+    <h1>Hello, babyy</h1>
+    <p>From me, to the girl I choose.</p>
+
+    <div class="letter-preview" id="openLetter">
+      <div class="preview-paper">
+        <div class="date">September 2026</div>
+        <h2>Hii babyyy,</h2>
+        <div class="lines"><i></i><i></i><i></i><i></i></div>
+        <div class="signature">me</div>
+      </div>
+    </div>
+
+    <button class="open-btn" id="openBtn">Open my letter</button>
+  </section>
+
+  <section class="letter-section hidden" id="letter">
+    <button class="back" id="backBtn">← back</button>
+    <article class="paper">
+      <div class="paper-top"></div>
+      <div class="date">September 2026</div>
+      <h1>Hii babyyy,</h1>
+
+      <div class="letter-text">
+        <p>Yes, baby. I am ready. I know I told you na I'll answer this tomorrow kasi gusto ko pag-isipan nang maayos and I wanted to add more details instead of just saying “yes, I'm ready” and leaving it at that. So yes, I really am ready to commit to us po.</p>
+
+        <p>For me, committing to you means that I'll always choose you, be honest with you, communicate with you, and work through our problems together. It means being patient with the distance, being there for you through your ups and downs, reassuring you whenever you need it, and doing my best to make you feel loved and cared for. I don't expect our relationship to always be perfect kasi I know naman na walang relationship na walang misunderstandings. What matters to me is that whenever those things happen, we don't run away from each other. I want us to talk about it, fix it, and choose us even when things get difficult.</p>
+
+        <p>And from what I've gotten to know about you, I think I've already seen enough sides of you to know that I want to commit. Pero ofc, that doesn't mean na I already know everything about you. There's still so much more that I want to learn and discover about you, even the tiniest details, and that's something I want to continue doing even when we're already officially together.</p>
+
+        <p>One of the biggest things that made me realize na I'm ready is how you treat me. You make me feel loved and cared for, and even when we have misunderstandings, I can see na you actually want to fix things instead of hiding from the problem or just leaving it there. And honestly, that makes me feel so relieved because it shows me na you really care about what we have. I can feel that you care about us, and that's something that really captivated me.</p>
+
+        <p>I want you because of how you treat me. I want you because you're you. There's just something in my heart that's telling me na you're someone I want to keep choosing, someone I want to keep learning about, and someone I want to build something real with. I can't fully explain what that feeling is, pero nandun siya ever since, and hanggang ngayon I still feel it.</p>
+
+        <p>And ofc, I'm not expecting everything to be easy. I know there will be days na magkakaroon tayo ng misunderstandings, days na busy tayo, days na mamimiss natin ang isa't isa, and days na the distance will feel harder than usual. I'm prepared for that. I want to fight for us. I want to choose us even when things get difficult, and I want to be the person who stays and communicates instead of giving up agad.</p>
+
+        <p>And honestly, even if we officially become a couple, I feel like there will still be a missing piece in my heart na won't make me feel like we're FULLY a couple yet WHAHAHAHA. For me, one of the biggest milestones will be when I finally meet your parents, or even your ate, pero I'm still not ready to face them yet 😭 I will literally die WHAHAHAHAHA. But jokes aside, I know that day will mean so much to me because it'll feel like we're taking another huge step toward everything we've been talking about.</p>
+
+        <p>What really excites me about us becoming official is finally being able to call you my girlfriend. Like, akalain mo yun?? We're getting one step closer to all the plans we've made together. We're getting closer to finally meeting each other, and the time na magagawa na natin yung mga plans natin together is getting closer na rin. Diba diba?? 😭</p>
+
+        <p>And honestly, another thing is that it would reassure me even more na you're mine, kasi I'm still scared sometimes na you might find someone else na malapit lang sayo or fndgwywhgev 😭 basta 😭 I'm scared lang talaga kasi ang layo ko ☹️ and I know that's one of the insecurities that I still have. Maybe making things official would lessen that feeling a little, because I'd have that reassurance na we're really choosing each other and we're both committed to us.</p>
+
+        <div class="promise">I'm ready to commit to you because I want to treat you as best as I can. I want to give you the love, patience, honesty, reassurance, and effort that you deserve. I know I won't always get everything right, and I know I'll still make mistakes sometimes, but I promise na I'll always try to learn from them and be better for you and for us.</div>
+
+        <p>I don't want to just be your boyfriend in name. I want to actually be someone you can rely on, someone you can be comfortable with, someone you can talk to when something's wrong, and someone who will stay beside you through the good and bad days.</p>
+
+        <p>So if you're asking me if I'm ready to commit to you and call this a relationship... <b>yes, baby. I am.</b> I don't think I need to wait until I know every single thing about you before I choose you, because I know that I'll continue discovering you along the way. And I want to discover all those little things with you while we're already together.</p>
+
+        <p class="final">I love you po, babyy.<br><br>I want us. I choose you.<br><br>And I'm ready to commit to us.</p>
+        <p class="ps">P.S. I'm still gonna die when I meet your parents 😭 WHAHAHAHA</p>
+      </div>
+    </article>
+  </section>
+
+  <script>
+const intro=document.getElementById("intro");const letter=document.getElementById("letter");const openBtn=document.getElementById("openBtn");const preview=document.getElementById("openLetter");const backBtn=document.getElementById("backBtn");const audio=document.getElementById("music");const playBtn=document.getElementById("playBtn");function openLetter(){intro.classList.add("hidden");letter.classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})}openBtn.addEventListener("click",openLetter);preview.addEventListener("click",openLetter);backBtn.addEventListener("click",()=>{letter.classList.add("hidden");intro.classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})});playBtn.addEventListener("click",async()=>{try{if(audio.paused){await audio.play();playBtn.textContent="❚❚ Pause"}else{audio.pause();playBtn.textContent="▶ Play"}}catch(e){playBtn.textContent="♫ idunno how"}});
+</script>
+</body>
+</html>
